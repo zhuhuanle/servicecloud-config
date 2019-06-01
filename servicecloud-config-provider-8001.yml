@@ -9,9 +9,6 @@ spring:
  profiles: dev
  application:
   name: servicecloud-dev
-spring:
-  application:
-    name: servicecloud-provid
   datasource:
     url: jdbc:mysql://localhost:3306/t1?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull
     driver-class-name: com.mysql.jdbc.Driver
@@ -63,9 +60,6 @@ spring:
  profiles: test
  application:
   name: servicecloud-test
-spring:
-  application:
-    name: servicecloud-provid
   datasource:
     url: jdbc:mysql://localhost:3306/t1?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull
     driver-class-name: com.mysql.jdbc.Driver
