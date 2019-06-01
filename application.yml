@@ -3,12 +3,24 @@
   active:
   - dev
 ---
+server:
+ port: 8201
 spring:
  profiles: dev
  application:
   name: servicecloud-dev
+eureka:
+ client:
+  server-url:
+   defaultZone: http://eureka1.com:7001/eureka/
 ---
+server:
+ port: 8201
 spring:
  profiles: test
  application:
   name: servicecloud-test
+eureka:
+ client:
+  server-url:
+   defaultZone: http://eureka1.com:7001/eureka/
