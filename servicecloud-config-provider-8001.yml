@@ -1,5 +1,14 @@
-﻿server:
-  port: 8003
+﻿spring:
+ profiles:
+  active:
+  - dev
+---
+server:
+ port: 8001
+spring:
+ profiles: dev
+ application:
+  name: servicecloud-dev
 spring:
   application:
     name: servicecloud-provid
