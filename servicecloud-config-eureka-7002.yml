@@ -21,7 +21,7 @@ eureka:
     #enable-self-preservation: false 注销eureka的自我保护机制
 ---
 server:
- port: 7001
+ port: 7002
 spring:
  profiles: test
  application:
