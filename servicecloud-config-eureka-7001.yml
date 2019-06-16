@@ -8,7 +8,7 @@ server:
 spring:
  profiles: dev
  application:
-  name: servicecloud-dev
+  name: eureka
 eureka:
   instance:
     hostname: eureka1.com
@@ -16,7 +16,7 @@ eureka:
     fetch-registry: false
     register-with-eureka: false
     service-url:
-      defaultZone: http://eureka2.com:7002/eureka/,http://eureka3.com:7003/eureka/ //指定其他服务器地址
+      defaultZone: http://eureka2.com:7002/eureka/,http://eureka3.com:7003/eureka/ #指定其他服务器地址
   #server:
     #enable-self-preservation: false 注销eureka的自我保护机制
 ---
@@ -25,7 +25,7 @@ server:
 spring:
  profiles: test
  application:
-  name: servicecloud-dev
+  name: eureka
 eureka:
   instance:
     hostname: eureka1.com
@@ -33,6 +33,6 @@ eureka:
     fetch-registry: false
     register-with-eureka: false
     service-url:
-      defaultZone: http://eureka2.com:7002/eureka/,http://eureka3.com:7003/eureka/ //指定其他服务器地址
+      defaultZone: http://eureka2.com:7002/eureka/,http://eureka3.com:7003/eureka/ #指定其他服务器地址
   #server:
     #enable-self-preservation: false 注销eureka的自我保护机制
