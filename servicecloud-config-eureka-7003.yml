@@ -1,0 +1,38 @@
+﻿spring:
+ profiles:
+  active:
+  - dev
+---
+server:
+ port: 7003
+spring:
+ profiles: dev
+ application:
+  name: eureka-7003
+eureka:
+  instance:
+    hostname: eureka3.com
+  client:
+    fetch-registry: false
+    register-with-eureka: false
+    service-url:
+      defaultZone: http://eureka2.com:7002/eureka/,http://eureka1.com:7001/eureka/ #指定其他服务器地址
+  #server:
+    #enable-self-preservation: false 注销eureka的自我保护机制
+---
+server:
+ port: 7003
+spring:
+ profiles: test
+ application:
+  name: eureka-7003
+eureka:
+  instance:
+    hostname: eureka3.com
+  client:
+    fetch-registry: false
+    register-with-eureka: false
+    service-url:
+      defaultZone: http://eureka1.com:7001/eureka/,http://eureka2.com:7002/eureka/ #指定其他服务器地址
+  #server:
+    #enable-self-preservation: false 注销eureka的自我保护机制
