@@ -48,6 +48,9 @@ eureka:
   instance:
     instance-id: user:8005
     prefer-ip-address: true
+feign:
+  hystrix:
+    enabled: true
 info:
   app.name: atguigu
   company.name: www.atguigu.com
@@ -99,6 +102,9 @@ eureka:
   instance:
     instance-id: user:8005
     prefer-ip-address: true
+feign:
+  hystrix:
+    enabled: true
 info:
   app.name: atguigu
   company.name: www.atguigu.com
