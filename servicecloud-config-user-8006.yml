@@ -4,7 +4,7 @@
   - dev
 ---
 server:
- port: 8005
+ port: 8006
 spring:
  profiles: dev
  application:
@@ -58,7 +58,7 @@ info:
   builder.version: $project.version$
 ---
 server:
- port: 8005
+ port: 8006
 spring:
  profiles: test
  application:
@@ -100,7 +100,7 @@ eureka:
     service-url:
       defaultZone: http://localhost:7001/eureka/,http://localhost:7002/eureka/,http://localhost:7003/eureka/
   instance:
-    instance-id: user:8005
+    instance-id: user:8006
     prefer-ip-address: true
 feign:
   hystrix:

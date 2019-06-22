@@ -4,11 +4,11 @@
   - dev
 ---
 server:
- port: 8005
+ port: 8003
 spring:
  profiles: dev
  application:
-  name: user
+  name: mechant
   datasource:
     url: jdbc:mysql://localhost:3306/study?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull
     driver-class-name: com.mysql.jdbc.Driver
@@ -46,7 +46,7 @@ eureka:
     service-url:
       defaultZone: http://localhost:7001/eureka/,http://localhost:7002/eureka/,http://localhost:7003/eureka/
   instance:
-    instance-id: user:8005
+    instance-id: mechant:8003
     prefer-ip-address: true
 feign:
   hystrix:
@@ -58,7 +58,7 @@ info:
   builder.version: $project.version$
 ---
 server:
- port: 8005
+ port: 8003
 spring:
  profiles: test
  application:
@@ -100,7 +100,7 @@ eureka:
     service-url:
       defaultZone: http://localhost:7001/eureka/,http://localhost:7002/eureka/,http://localhost:7003/eureka/
   instance:
-    instance-id: user:8005
+    instance-id: mechant:8003
     prefer-ip-address: true
 feign:
   hystrix:
