@@ -62,7 +62,7 @@ server:
 spring:
  profiles: test
  application:
-  name: user
+  name: mechant
   datasource:
     url: jdbc:mysql://localhost:3306/study?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull
     driver-class-name: com.mysql.jdbc.Driver
